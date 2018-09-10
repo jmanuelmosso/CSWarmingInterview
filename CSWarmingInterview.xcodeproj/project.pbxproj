@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C09F790021470CC2008AC5EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C09F78FF21470CC2008AC5EA /* main.m */; };
+		C09F790A21470DB6008AC5EA /* CyclicRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C09F790921470DB6008AC5EA /* CyclicRotation.m */; };
+		C09F790D21470DE3008AC5EA /* CodilitySolutions.m in Sources */ = {isa = PBXBuildFile; fileRef = C09F790C21470DE3008AC5EA /* CodilitySolutions.m */; };
+		C09F791021471111008AC5EA /* HackerRankSolutions.m in Sources */ = {isa = PBXBuildFile; fileRef = C09F790F21471111008AC5EA /* HackerRankSolutions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		C09F78FC21470CC2008AC5EA /* CSWarmingInterview */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CSWarmingInterview; sourceTree = BUILT_PRODUCTS_DIR; };
 		C09F78FF21470CC2008AC5EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C09F790821470DB6008AC5EA /* CyclicRotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CyclicRotation.h; sourceTree = "<group>"; };
+		C09F790921470DB6008AC5EA /* CyclicRotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CyclicRotation.m; sourceTree = "<group>"; };
+		C09F790B21470DE3008AC5EA /* CodilitySolutions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodilitySolutions.h; sourceTree = "<group>"; };
+		C09F790C21470DE3008AC5EA /* CodilitySolutions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodilitySolutions.m; sourceTree = "<group>"; };
+		C09F790E21471111008AC5EA /* HackerRankSolutions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HackerRankSolutions.h; sourceTree = "<group>"; };
+		C09F790F21471111008AC5EA /* HackerRankSolutions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerRankSolutions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +66,47 @@
 		C09F78FE21470CC2008AC5EA /* CSWarmingInterview */ = {
 			isa = PBXGroup;
 			children = (
+				C09F790721470CF2008AC5EA /* HackerRankChallenges */,
+				C09F790621470CD2008AC5EA /* CodilityChallenges */,
 				C09F78FF21470CC2008AC5EA /* main.m */,
 			);
 			path = CSWarmingInterview;
+			sourceTree = "<group>";
+		};
+		C09F790621470CD2008AC5EA /* CodilityChallenges */ = {
+			isa = PBXGroup;
+			children = (
+				C09F791121471115008AC5EA /* Arrays */,
+				C09F790B21470DE3008AC5EA /* CodilitySolutions.h */,
+				C09F790C21470DE3008AC5EA /* CodilitySolutions.m */,
+			);
+			path = CodilityChallenges;
+			sourceTree = "<group>";
+		};
+		C09F790721470CF2008AC5EA /* HackerRankChallenges */ = {
+			isa = PBXGroup;
+			children = (
+				C09F791221471120008AC5EA /* Arrays */,
+				C09F790E21471111008AC5EA /* HackerRankSolutions.h */,
+				C09F790F21471111008AC5EA /* HackerRankSolutions.m */,
+			);
+			path = HackerRankChallenges;
+			sourceTree = "<group>";
+		};
+		C09F791121471115008AC5EA /* Arrays */ = {
+			isa = PBXGroup;
+			children = (
+				C09F790821470DB6008AC5EA /* CyclicRotation.h */,
+				C09F790921470DB6008AC5EA /* CyclicRotation.m */,
+			);
+			path = Arrays;
+			sourceTree = "<group>";
+		};
+		C09F791221471120008AC5EA /* Arrays */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Arrays;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C09F790A21470DB6008AC5EA /* CyclicRotation.m in Sources */,
+				C09F790D21470DE3008AC5EA /* CodilitySolutions.m in Sources */,
+				C09F791021471111008AC5EA /* HackerRankSolutions.m in Sources */,
 				C09F790021470CC2008AC5EA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,11 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CodilitySolutions.h"
+#import "HackerRankSolutions.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        #pragma - Codility Challenges
+        NSMutableArray *array = [NSMutableArray arrayWithArray:@[@3, @8, @9, @7, @6]];
+        [CodilitySolutions testCyclicRotationWithArray:array rotations:6];
+        
+        
+        
+        #pragma - Hacker Rank Challenges
     }
     return 0;
 }
