@@ -10,7 +10,7 @@
 
 @implementation CyclicRotation
 
-/*
+/* PROBLEM
  An array A consisting of N integers is given. Rotation of the array means that each element is shifted right by one index,
  and the last element of the array is moved to the first place. For example, the rotation of array A = [3, 8, 9, 7, 6] is [6, 3, 8, 9, 7]
  (elements are shifted right by one index and 6 is moved to the first place).
@@ -89,12 +89,12 @@
 
 /*
  Solution results given by Codility
- - Task Score: 100%
- - Correctness: 100%
- - Performance: Not assesed
+    - Task Score: 100%
+    - Correctness: 100%
+    - Performance: Not assesed
  
  Time Complexity:
- - The worst case time complexity is O(3n) => O(n)
+    - The worst case time complexity is O(3n) => O(n)
  */
 +(NSMutableArray*)reverseBasedsolution:(NSMutableArray*)array rotations:(int)k {
     

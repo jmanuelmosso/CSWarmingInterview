@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C09E20392148388100DBE15C /* OddOccurrencesInArray.m in Sources */ = {isa = PBXBuildFile; fileRef = C09E20382148388100DBE15C /* OddOccurrencesInArray.m */; };
 		C09F790021470CC2008AC5EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C09F78FF21470CC2008AC5EA /* main.m */; };
 		C09F790A21470DB6008AC5EA /* CyclicRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C09F790921470DB6008AC5EA /* CyclicRotation.m */; };
 		C09F790D21470DE3008AC5EA /* CodilitySolutions.m in Sources */ = {isa = PBXBuildFile; fileRef = C09F790C21470DE3008AC5EA /* CodilitySolutions.m */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C09E20372148388100DBE15C /* OddOccurrencesInArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OddOccurrencesInArray.h; sourceTree = "<group>"; };
+		C09E20382148388100DBE15C /* OddOccurrencesInArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OddOccurrencesInArray.m; sourceTree = "<group>"; };
 		C09F78FC21470CC2008AC5EA /* CSWarmingInterview */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CSWarmingInterview; sourceTree = BUILT_PRODUCTS_DIR; };
 		C09F78FF21470CC2008AC5EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C09F790821470DB6008AC5EA /* CyclicRotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CyclicRotation.h; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 			children = (
 				C09F790821470DB6008AC5EA /* CyclicRotation.h */,
 				C09F790921470DB6008AC5EA /* CyclicRotation.m */,
+				C09E20372148388100DBE15C /* OddOccurrencesInArray.h */,
+				C09E20382148388100DBE15C /* OddOccurrencesInArray.m */,
 			);
 			path = Arrays;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				C09F790A21470DB6008AC5EA /* CyclicRotation.m in Sources */,
 				C09F790D21470DE3008AC5EA /* CodilitySolutions.m in Sources */,
 				C09F791021471111008AC5EA /* HackerRankSolutions.m in Sources */,
+				C09E20392148388100DBE15C /* OddOccurrencesInArray.m in Sources */,
 				C09F790021470CC2008AC5EA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

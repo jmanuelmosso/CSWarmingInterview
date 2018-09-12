@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "CyclicRotation.h"
+#import "OddOccurrencesInArray.h"
 
 @interface CodilitySolutions : NSObject
 #pragma - mark Arrays Problems
 +(void)testCyclicRotationWithArray:(NSArray *)array rotations:(int)k;
++(void)testOddOccurrencesWithArray:(NSArray *)array;
 @end
