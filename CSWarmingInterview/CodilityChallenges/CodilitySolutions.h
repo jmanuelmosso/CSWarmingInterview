@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CyclicRotation.h"
-#import "OddOccurrencesInArray.h"
 
 @interface CodilitySolutions : NSObject
+#pragma - mark Iterations Problems
++(void)testBinaryGapForNumber:(int)n;
 #pragma - mark Arrays Problems
 +(void)testCyclicRotationWithArray:(NSArray *)array rotations:(int)k;
 +(void)testOddOccurrencesWithArray:(NSArray *)array;

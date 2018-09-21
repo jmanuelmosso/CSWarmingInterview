@@ -13,8 +13,9 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         #pragma - Codility Challenges
-        [CodilitySolutions testCyclicRotationWithArray:@[@3, @8, @9, @7, @6] rotations:-2];
-        [CodilitySolutions testOddOccurrencesWithArray:@[@7, @3, @5, @4, @5, @3, @4]];
+        [CodilitySolutions testBinaryGapForNumber:9];
+       // [CodilitySolutions testCyclicRotationWithArray:@[@3, @8, @9, @7, @6] rotations:-2];
+       // [CodilitySolutions testOddOccurrencesWithArray:@[@7, @3, @5, @4, @5, @3, @4]];
 
         #pragma - Hacker Rank Challenges
     }

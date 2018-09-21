@@ -7,8 +7,16 @@
 //
 
 #import "CodilitySolutions.h"
+#import "CyclicRotation.h"
+#import "OddOccurrencesInArray.h"
+#import "BinaryGap.h"
 
 @implementation CodilitySolutions
+#pragma - mark Iterations Problems
++(void)testBinaryGapForNumber:(int)n {
+    int longestGap = [BinaryGap solutionOne:n];
+    NSLog(@"Longest Gap: %i", longestGap);
+}
 
 #pragma - mark Arrays Problems
 +(void)testCyclicRotationWithArray:(NSArray *)array rotations:(int)k {
@@ -23,6 +31,5 @@
     int res = [OddOccurrencesInArray XORSolution:[NSMutableArray arrayWithArray:array]];
     NSLog(@"Element Appeared Once: %i", res);
 }
-
 
 @end

@@ -12,6 +12,7 @@
 		C09F790A21470DB6008AC5EA /* CyclicRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C09F790921470DB6008AC5EA /* CyclicRotation.m */; };
 		C09F790D21470DE3008AC5EA /* CodilitySolutions.m in Sources */ = {isa = PBXBuildFile; fileRef = C09F790C21470DE3008AC5EA /* CodilitySolutions.m */; };
 		C09F791021471111008AC5EA /* HackerRankSolutions.m in Sources */ = {isa = PBXBuildFile; fileRef = C09F790F21471111008AC5EA /* HackerRankSolutions.m */; };
+		C0F6FEA821541DCE00F62769 /* BinaryGap.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F6FEA721541DCE00F62769 /* BinaryGap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		C09F790C21470DE3008AC5EA /* CodilitySolutions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodilitySolutions.m; sourceTree = "<group>"; };
 		C09F790E21471111008AC5EA /* HackerRankSolutions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HackerRankSolutions.h; sourceTree = "<group>"; };
 		C09F790F21471111008AC5EA /* HackerRankSolutions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerRankSolutions.m; sourceTree = "<group>"; };
+		C0F6FEA621541DCE00F62769 /* BinaryGap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryGap.h; sourceTree = "<group>"; };
+		C0F6FEA721541DCE00F62769 /* BinaryGap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryGap.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 		C09F790621470CD2008AC5EA /* CodilityChallenges */ = {
 			isa = PBXGroup;
 			children = (
+				C0F6FEA221541CF000F62769 /* Iterations */,
 				C09F791121471115008AC5EA /* Arrays */,
 				C09F790B21470DE3008AC5EA /* CodilitySolutions.h */,
 				C09F790C21470DE3008AC5EA /* CodilitySolutions.m */,
@@ -112,6 +116,15 @@
 			children = (
 			);
 			path = Arrays;
+			sourceTree = "<group>";
+		};
+		C0F6FEA221541CF000F62769 /* Iterations */ = {
+			isa = PBXGroup;
+			children = (
+				C0F6FEA621541DCE00F62769 /* BinaryGap.h */,
+				C0F6FEA721541DCE00F62769 /* BinaryGap.m */,
+			);
+			path = Iterations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C09F790A21470DB6008AC5EA /* CyclicRotation.m in Sources */,
+				C0F6FEA821541DCE00F62769 /* BinaryGap.m in Sources */,
 				C09F790D21470DE3008AC5EA /* CodilitySolutions.m in Sources */,
 				C09F791021471111008AC5EA /* HackerRankSolutions.m in Sources */,
 				C09E20392148388100DBE15C /* OddOccurrencesInArray.m in Sources */,
