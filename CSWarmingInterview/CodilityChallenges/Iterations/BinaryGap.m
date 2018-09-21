@@ -56,12 +56,35 @@ Time Complexity:
     int candidates = 0;
     int gapCounter = 0;
     
+    
+    /******** Algorithm Explanation  ********/
+    
+    // FACTS
+    //      Every valid gap starts with a '1' and close with another '1', with at least one 'zero' betwen them.
+    //      1001  - Is a valid gap
+    //      00100 - Isn't a valid gap
+    //      10100 - has a valid gap
+    //      11111 - Isn't a valid gap
+
+    
+    // STEP 1
+    //     Get bits representation one by one from the Rigth to the Left
+    //     That means, for n=4, I'll get first a Zero, then another Zero, then a One, finally a Zero.  [0,1,0,0]
+    //     4 -> 0100
+    // STEP 2
+    //      Start looking for the first '1' - since our flag 'start' is false in the first iteration, we'll look
+    //      for the first occurrence of '1', that means we have a valid start pattern and we change the flag 'start' to true
+    //      for the next iterations we should validate if the current bit is '0' and use a counter, in this case 'candidates'.
+    //      Only if, there is another '1' in the incoming bits, we are sure that we have a valid binary gap, then we compare
+    //      our previous 'candidates' with our current 'gapCounter' in order to keep the highest one.
+    //      In case that there isn't another '1' to close the gap, we never change the value of 'gapCounter' and we return zero 0
+    
     while(n){
-        // Getting the bits representation one by one
+        // STEP 1
         NSString *bit = (n & 1) ? @"1": @"0";
         n /= 2;
         
-        // Looking for gaps
+        // STEP 2
         if ( start  && [bit isEqualToString:@"0"]) {
             candidates++;
         }
