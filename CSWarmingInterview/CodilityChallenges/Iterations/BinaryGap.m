@@ -51,12 +51,7 @@ Time Complexity:
 - The worst case time complexity is O(n)
 */
 +(int)solutionOne:(int)n {
-    
-    BOOL start = NO;
-    int candidates = 0;
-    int gapCounter = 0;
-    
-    
+
     /******** Algorithm Explanation  ********/
     
     // FACTS
@@ -72,12 +67,17 @@ Time Complexity:
     //     That means, for n=4, I'll get first a Zero, then another Zero, then a One, finally a Zero.  [0,1,0,0]
     //     4 -> 0100
     // STEP 2
-    //      Start looking for the first '1' - since our flag 'start' is false in the first iteration, we'll look
-    //      for the first occurrence of '1', that means we have a valid start pattern and we change the flag 'start' to true
+    //      Start looking for the first '1' - since our flag 'hasStartPattern' is false in the first iteration, we'll look
+    //      for the first occurrence of '1', that means we have a valid start pattern and we change the flag 'hasStartPattern' to true
     //      for the next iterations we should validate if the current bit is '0' and use a counter, in this case 'candidates'.
     //      Only if, there is another '1' in the incoming bits, we are sure that we have a valid binary gap, then we compare
     //      our previous 'candidates' with our current 'gapCounter' in order to keep the highest one.
-    //      In case that there isn't another '1' to close the gap, we never change the value of 'gapCounter' and we return zero 0
+    //      In case that there isn't another '1' to close the gap, we never change the value of 'gapCounter' and we return 0
+    
+    
+    BOOL hasStartPattern = NO;
+    int candidates = 0;
+    int gapCounter = 0;
     
     while(n){
         // STEP 1
@@ -85,10 +85,10 @@ Time Complexity:
         n /= 2;
         
         // STEP 2
-        if ( start  && [bit isEqualToString:@"0"]) {
+        if ( hasStartPattern  && [bit isEqualToString:@"0"]) {
             candidates++;
         }
-        else if ( start  && [bit isEqualToString:@"1"]) {
+        else if ( hasStartPattern  && [bit isEqualToString:@"1"]) {
             // At least one '1' exist as a close pattern
             if (candidates > gapCounter) {
                 gapCounter = candidates;
@@ -96,7 +96,7 @@ Time Complexity:
             candidates = 0;
         }
         else if ([bit isEqualToString:@"1"]) {
-            start = YES; // At least one '1' exist as an open pattern
+            hasStartPattern = YES; // At least one '1' exist as an open pattern
         }
     }
     return gapCounter;
@@ -104,8 +104,85 @@ Time Complexity:
 
 
 
+/*
+ Solution results given by Codility
+ - Task Score: 100%
+ - Correctness: 100%
+ - Performance: Not assesed
+ 
+ Time Complexity:
+ - The worst case time complexity is O(2n)
+ */
++(int)solutionTwo:(int)n {
+    
+    /******** Algorithm Explanation  ********/
+    
+    // FACTS
+    //      Every valid gap starts with a '1' and close with another '1', with at least one 'zero' betwen them.
+    //      1001  - Is a valid gap
+    //      00100 - Isn't a valid gap
+    //      10100 - has a valid gap
+    //      11111 - Isn't a valid gap
+    
+    
+    // STEP 1
+    //     Get the bits of n, using an auxiliary method wich has O(n) Complexity
+
+    // STEP 2
+    //      Iterate over each bit we got in Step One
+    //      Start looking for the first '1' - since our flag 'hasStartPattern' is false in the first iteration, we'll look
+    //      for the first occurrence of '1', that means we have a valid start pattern and we change the flag 'hasStartPattern' to true
+    //      for the next iterations we should validate if the current bit is '0' and use a counter, in this case 'candidates'.
+    //      Only if, there is another '1' in the incoming bits, we are sure that we have a valid binary gap, then we compare
+    //      our previous 'candidates' with our current 'gapCounter' in order to keep the highest one.
+    //      In case that there isn't another '1' to close the gap, we never change the value of 'gapCounter' and we return 0
+    
+    
+    // STEP 1
+    // O(n)
+    NSString *bits = [self getBitsForNumber:n];
+    
+    BOOL hasStartPattern = NO;
+    int candidates = 0;
+    int gapCounter = 0;
+    
+    // STEP 2
+    // O(n)
+    for (int i=0; i < bits.length; i++) {
+        
+        char currentBit = [bits characterAtIndex:i];
+
+        if ( hasStartPattern  && currentBit == '0' ) {
+            candidates++;
+        }
+        else if ( hasStartPattern  && currentBit == '1' ) {
+            // At least one '1' exist as a close pattern
+            if (candidates > gapCounter) {
+                gapCounter = candidates;
+            }
+            candidates = 0;
+        }
+        else if (currentBit == '1') {
+            hasStartPattern = YES; // At least one '1' exist as an open pattern
+        }
+        
+    }
+    
+    return gapCounter;
+}
 
 
-
+/*
+Time Complexity:
+- The worst case time complexity for this auxiliary method is O(n)
+*/
++(NSString*)getBitsForNumber:(int)n {
+    NSMutableString *bits = [NSMutableString string];
+    while(n) {
+        [bits insertString:((n&1)? @"1" : @"0") atIndex:0];
+        n /= 2;
+    }
+    return bits;
+}
 
 @end

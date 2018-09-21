@@ -15,7 +15,9 @@
 #pragma - mark Iterations Problems
 +(void)testBinaryGapForNumber:(int)n {
     int longestGap = [BinaryGap solutionOne:n];
-    NSLog(@"Longest Gap: %i", longestGap);
+    NSLog(@"Longest Gap Method One: %i", longestGap);
+    longestGap = [BinaryGap solutionTwo:n];
+    NSLog(@"Longest Gap Method Two: %i", longestGap);
 }
 
 #pragma - mark Arrays Problems

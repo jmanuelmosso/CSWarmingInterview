@@ -11,5 +11,6 @@
 
 @interface BinaryGap : NSObject
 +(int)solutionOne:(int)n;
++(int)solutionTwo:(int)n;
 @end
 
