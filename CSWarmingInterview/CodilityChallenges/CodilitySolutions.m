@@ -11,6 +11,7 @@
 #import "OddOccurrencesInArray.h"
 #import "BinaryGap.h"
 #import "PermMissingElem.h"
+#import "FrogJmp.h"
 
 @implementation CodilitySolutions
 #pragma - mark Iterations Problems
@@ -40,5 +41,11 @@
     int missingElement = [PermMissingElem solution:[NSMutableArray arrayWithArray:array]];
     NSLog(@"Missing Element in the Array: %i", missingElement);
 }
+
++(void)testFrogJumpsFor:(int)x y:(int)y d:(int)d {
+    int jumps = [FrogJmp solution:x y:y d:d];
+    NSLog(@"Frog Jumps: %i", jumps);
+}
+
 
 @end

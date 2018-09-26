@@ -16,4 +16,5 @@
 +(void)testOddOccurrencesWithArray:(NSArray *)array;
 #pragma - mark Time Complexity Problems
 +(void)testPermMissingElementWithArray:(NSArray *)array;
++(void)testFrogJumpsFor:(int)x y:(int)y d:(int)d;
 @end

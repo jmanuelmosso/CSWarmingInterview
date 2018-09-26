@@ -50,7 +50,7 @@ Time Complexity given by Codility:
 - The worst case time complexity is O(N) or O(N * log(N))
 */
 +(int)solution:(NSMutableArray*)array {
-    
+
     /******** Algorithm Explanation  ********/
     
     // FACTS
