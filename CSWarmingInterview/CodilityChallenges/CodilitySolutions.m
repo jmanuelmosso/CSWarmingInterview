@@ -10,6 +10,7 @@
 #import "CyclicRotation.h"
 #import "OddOccurrencesInArray.h"
 #import "BinaryGap.h"
+#import "PermMissingElem.h"
 
 @implementation CodilitySolutions
 #pragma - mark Iterations Problems
@@ -32,6 +33,12 @@
 +(void)testOddOccurrencesWithArray:(NSArray *)array {
     int res = [OddOccurrencesInArray XORSolution:[NSMutableArray arrayWithArray:array]];
     NSLog(@"Element Appeared Once: %i", res);
+}
+
+#pragma - mark Time Complexity Problems
++(void)testPermMissingElementWithArray:(NSArray *)array {
+    int missingElement = [PermMissingElem solution:[NSMutableArray arrayWithArray:array]];
+    NSLog(@"Missing Element in the Array: %i", missingElement);
 }
 
 @end

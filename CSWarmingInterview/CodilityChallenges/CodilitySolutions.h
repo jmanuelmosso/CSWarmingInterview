@@ -14,4 +14,6 @@
 #pragma - mark Arrays Problems
 +(void)testCyclicRotationWithArray:(NSArray *)array rotations:(int)k;
 +(void)testOddOccurrencesWithArray:(NSArray *)array;
+#pragma - mark Time Complexity Problems
++(void)testPermMissingElementWithArray:(NSArray *)array;
 @end
