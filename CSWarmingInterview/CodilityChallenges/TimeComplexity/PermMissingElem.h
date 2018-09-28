@@ -10,7 +10,8 @@
 
 
 @interface PermMissingElem : NSObject
-+(int)solution:(NSMutableArray*)array;
++(int)SETSolution:(NSMutableArray*)array;
++(int)XORSolution:(NSMutableArray*)array;
 @end
 
 

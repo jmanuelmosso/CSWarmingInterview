@@ -49,7 +49,7 @@ Solution results given by Codility
 Time Complexity given by Codility:
 - The worst case time complexity is O(N) or O(N * log(N))
 */
-+(int)solution:(NSMutableArray*)array {
++(int)SETSolution:(NSMutableArray*)array {
 
     /******** Algorithm Explanation  ********/
     
@@ -87,6 +87,61 @@ Time Complexity given by Codility:
             }
         }
         return  missing;
+    }
+}
+
+/*
+ Solution results given by Codility
+ - Task Score: 100%
+ - Correctness: 100%
+ - Performance: 100%
+ 
+ Time Complexity given by Codility:
+ - The worst case time complexity is O(N) or O(N * log(N))
+ */
++(int)XORSolution:(NSMutableArray*)array {
+    
+    /******** Algorithm Explanation  ********/
+    
+    // FACTS
+    //      Use of XOR operator
+    //      Edge case: when the array is empty [], we should return 1
+    //      XOR of a number with itself is 0.
+    //      XOR of a number with 0 is number itself.
+    
+    
+    // STEP 1
+    //       XOR all the array elements, let the result of XOR be X1.
+    // STEP 2
+    //       XOR all numbers from 1 to n, let XOR be X2.
+    // STEP 3
+    //       XOR of X1 and X2 gives the missing number.
+    
+    int n = (int)[array count];
+    
+    // Edge Case
+    if(n==0){
+        return 1;
+    }
+    else {
+        
+        // STEP 1
+        /* XOR of all the elements in array */
+        int x1 = 0;
+        for (int i=0; i < n; i++){
+            x1 = x1 ^ [[array objectAtIndex:i]intValue];
+        }
+        
+        // STEP 2
+        /* XOR of all the elements from 1 to n+1 */
+        int x2 = 0;
+        for (int i=1; i <= (n+1); i++){
+            x2 = x2 ^ i;
+        }
+        
+        // STEP 3
+        int missingElement = x1 ^ x2;
+        return missingElement;
     }
 }
 

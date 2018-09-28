@@ -38,7 +38,9 @@
 
 #pragma - mark Time Complexity Problems
 +(void)testPermMissingElementWithArray:(NSArray *)array {
-    int missingElement = [PermMissingElem solution:[NSMutableArray arrayWithArray:array]];
+    int missingElement = [PermMissingElem SETSolution:[NSMutableArray arrayWithArray:array]];
+    NSLog(@"Missing Element in the Array: %i", missingElement);
+    missingElement = [PermMissingElem XORSolution:[NSMutableArray arrayWithArray:array]];
     NSLog(@"Missing Element in the Array: %i", missingElement);
 }
 
@@ -46,6 +48,5 @@
     int jumps = [FrogJmp solution:x y:y d:d];
     NSLog(@"Frog Jumps: %i", jumps);
 }
-
 
 @end
