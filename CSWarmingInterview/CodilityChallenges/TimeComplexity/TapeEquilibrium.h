@@ -10,6 +10,6 @@
 
 
 @interface TapeEquilibrium : NSObject
-+(int)subarraySolution:(NSArray*) array;
++(int)solution:(NSArray*) array;
 @end
 

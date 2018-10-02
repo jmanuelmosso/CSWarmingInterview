@@ -51,7 +51,7 @@
 }
 
 +(void)testTapeEquilibriumSolution:(NSArray*)array{
-    int minimumDifference = [TapeEquilibrium subarraySolution:array];
+    int minimumDifference = [TapeEquilibrium solution:array];
     NSLog(@"Minimum Difference: %i", minimumDifference);
 
 }
