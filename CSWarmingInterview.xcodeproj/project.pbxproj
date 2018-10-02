@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C02DE4C92163D63B00002CB7 /* PermCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = C02DE4C82163D63B00002CB7 /* PermCheck.m */; };
 		C057E222215C126D006AA3E6 /* PermMissingElem.m in Sources */ = {isa = PBXBuildFile; fileRef = C057E221215C126D006AA3E6 /* PermMissingElem.m */; };
 		C057E225215C42F4006AA3E6 /* FrogJmp.m in Sources */ = {isa = PBXBuildFile; fileRef = C057E224215C42F4006AA3E6 /* FrogJmp.m */; };
 		C083DDD12162A0DB009E6195 /* TapeEquilibrium.m in Sources */ = {isa = PBXBuildFile; fileRef = C083DDD02162A0DB009E6195 /* TapeEquilibrium.m */; };
@@ -31,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C02DE4C72163D63B00002CB7 /* PermCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PermCheck.h; sourceTree = "<group>"; };
+		C02DE4C82163D63B00002CB7 /* PermCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PermCheck.m; sourceTree = "<group>"; };
 		C057E220215C126D006AA3E6 /* PermMissingElem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PermMissingElem.h; sourceTree = "<group>"; };
 		C057E221215C126D006AA3E6 /* PermMissingElem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PermMissingElem.m; sourceTree = "<group>"; };
 		C057E223215C42F4006AA3E6 /* FrogJmp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrogJmp.h; sourceTree = "<group>"; };
@@ -62,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C02DE4C62163D5DA00002CB7 /* CountingElements */ = {
+			isa = PBXGroup;
+			children = (
+				C02DE4C72163D63B00002CB7 /* PermCheck.h */,
+				C02DE4C82163D63B00002CB7 /* PermCheck.m */,
+			);
+			path = CountingElements;
+			sourceTree = "<group>";
+		};
 		C057E21F215C1245006AA3E6 /* TimeComplexity */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,7 @@
 		C09F790621470CD2008AC5EA /* CodilityChallenges */ = {
 			isa = PBXGroup;
 			children = (
+				C02DE4C62163D5DA00002CB7 /* CountingElements */,
 				C057E21F215C1245006AA3E6 /* TimeComplexity */,
 				C0F6FEA221541CF000F62769 /* Iterations */,
 				C09F791121471115008AC5EA /* Arrays */,
@@ -208,6 +221,7 @@
 			files = (
 				C09F790A21470DB6008AC5EA /* CyclicRotation.m in Sources */,
 				C057E225215C42F4006AA3E6 /* FrogJmp.m in Sources */,
+				C02DE4C92163D63B00002CB7 /* PermCheck.m in Sources */,
 				C083DDD12162A0DB009E6195 /* TapeEquilibrium.m in Sources */,
 				C0F6FEA821541DCE00F62769 /* BinaryGap.m in Sources */,
 				C09F790D21470DE3008AC5EA /* CodilitySolutions.m in Sources */,

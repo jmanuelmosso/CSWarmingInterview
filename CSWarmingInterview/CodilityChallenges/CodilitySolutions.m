@@ -13,6 +13,7 @@
 #import "PermMissingElem.h"
 #import "FrogJmp.h"
 #import "TapeEquilibrium.h"
+#import "PermCheck.h"
 
 @implementation CodilitySolutions
 #pragma - mark Iterations Problems
@@ -53,8 +54,12 @@
 +(void)testTapeEquilibriumSolution:(NSArray*)array{
     int minimumDifference = [TapeEquilibrium solution:array];
     NSLog(@"Minimum Difference: %i", minimumDifference);
-
 }
 
+#pragma - mark Counting Elements Problems
++(void)testPermCheckSolution:(NSArray *)array {
+    int isPermutation = [PermCheck solution:[NSMutableArray arrayWithArray:array]];
+    NSLog(@"Is permutation?: %i", isPermutation);
+}
 
 @end

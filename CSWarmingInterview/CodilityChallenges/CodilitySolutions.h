@@ -18,4 +18,6 @@
 +(void)testPermMissingElementWithArray:(NSArray *)array;
 +(void)testFrogJumpsFor:(int)x y:(int)y d:(int)d;
 +(void)testTapeEquilibriumSolution:(NSArray*)array;
+#pragma - mark Counting Elements Problems
++(void)testPermCheckSolution:(NSArray *)array;
 @end
