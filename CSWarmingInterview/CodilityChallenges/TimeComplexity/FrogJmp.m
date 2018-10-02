@@ -58,7 +58,7 @@ Time Complexity given by Codility:
     
     // FACTS
     //      I realized that the formula:    [x+(n*d)] >= y    satisfies the required frog jumps
-    //      then, the forrmula to find the 'n' required jumps is the following:
+    //      then, the formula to find the 'n' required jumps is the following:
     //      n = (y-x)/d
     
     // STEP 1

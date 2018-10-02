@@ -128,14 +128,14 @@ Time Complexity given by Codility:
         // STEP 1
         /* XOR of all the elements in array */
         int x1 = 0;
-        for (int i=0; i < n; i++){
+        for (int i=0; i<n; i++){
             x1 = x1 ^ [[array objectAtIndex:i]intValue];
         }
         
         // STEP 2
         /* XOR of all the elements from 1 to n+1 */
         int x2 = 0;
-        for (int i=1; i <= (n+1); i++){
+        for (int i=1; i<=(n+1); i++){
             x2 = x2 ^ i;
         }
         

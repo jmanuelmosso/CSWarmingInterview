@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C057E222215C126D006AA3E6 /* PermMissingElem.m in Sources */ = {isa = PBXBuildFile; fileRef = C057E221215C126D006AA3E6 /* PermMissingElem.m */; };
 		C057E225215C42F4006AA3E6 /* FrogJmp.m in Sources */ = {isa = PBXBuildFile; fileRef = C057E224215C42F4006AA3E6 /* FrogJmp.m */; };
+		C083DDD12162A0DB009E6195 /* TapeEquilibrium.m in Sources */ = {isa = PBXBuildFile; fileRef = C083DDD02162A0DB009E6195 /* TapeEquilibrium.m */; };
 		C09E20392148388100DBE15C /* OddOccurrencesInArray.m in Sources */ = {isa = PBXBuildFile; fileRef = C09E20382148388100DBE15C /* OddOccurrencesInArray.m */; };
 		C09F790021470CC2008AC5EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C09F78FF21470CC2008AC5EA /* main.m */; };
 		C09F790A21470DB6008AC5EA /* CyclicRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C09F790921470DB6008AC5EA /* CyclicRotation.m */; };
@@ -34,6 +35,8 @@
 		C057E221215C126D006AA3E6 /* PermMissingElem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PermMissingElem.m; sourceTree = "<group>"; };
 		C057E223215C42F4006AA3E6 /* FrogJmp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrogJmp.h; sourceTree = "<group>"; };
 		C057E224215C42F4006AA3E6 /* FrogJmp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrogJmp.m; sourceTree = "<group>"; };
+		C083DDCF2162A0DB009E6195 /* TapeEquilibrium.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapeEquilibrium.h; sourceTree = "<group>"; };
+		C083DDD02162A0DB009E6195 /* TapeEquilibrium.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapeEquilibrium.m; sourceTree = "<group>"; };
 		C09E20372148388100DBE15C /* OddOccurrencesInArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OddOccurrencesInArray.h; sourceTree = "<group>"; };
 		C09E20382148388100DBE15C /* OddOccurrencesInArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OddOccurrencesInArray.m; sourceTree = "<group>"; };
 		C09F78FC21470CC2008AC5EA /* CSWarmingInterview */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CSWarmingInterview; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +69,8 @@
 				C057E221215C126D006AA3E6 /* PermMissingElem.m */,
 				C057E223215C42F4006AA3E6 /* FrogJmp.h */,
 				C057E224215C42F4006AA3E6 /* FrogJmp.m */,
+				C083DDCF2162A0DB009E6195 /* TapeEquilibrium.h */,
+				C083DDD02162A0DB009E6195 /* TapeEquilibrium.m */,
 			);
 			path = TimeComplexity;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			files = (
 				C09F790A21470DB6008AC5EA /* CyclicRotation.m in Sources */,
 				C057E225215C42F4006AA3E6 /* FrogJmp.m in Sources */,
+				C083DDD12162A0DB009E6195 /* TapeEquilibrium.m in Sources */,
 				C0F6FEA821541DCE00F62769 /* BinaryGap.m in Sources */,
 				C09F790D21470DE3008AC5EA /* CodilitySolutions.m in Sources */,
 				C057E222215C126D006AA3E6 /* PermMissingElem.m in Sources */,

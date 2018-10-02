@@ -12,6 +12,7 @@
 #import "BinaryGap.h"
 #import "PermMissingElem.h"
 #import "FrogJmp.h"
+#import "TapeEquilibrium.h"
 
 @implementation CodilitySolutions
 #pragma - mark Iterations Problems
@@ -48,5 +49,12 @@
     int jumps = [FrogJmp solution:x y:y d:d];
     NSLog(@"Frog Jumps: %i", jumps);
 }
+
++(void)testTapeEquilibriumSolution:(NSArray*)array{
+    int minimumDifference = [TapeEquilibrium subarraySolution:array];
+    NSLog(@"Minimum Difference: %i", minimumDifference);
+
+}
+
 
 @end
