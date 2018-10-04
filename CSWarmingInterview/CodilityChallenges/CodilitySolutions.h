@@ -20,4 +20,7 @@
 +(void)testTapeEquilibriumSolution:(NSArray*)array;
 #pragma - mark Counting Elements Problems
 +(void)testPermCheckSolution:(NSArray *)array;
+//TODO: Add missing problems here
++(void)testMissingIntegerSolution:(NSArray *)array;
+
 @end

@@ -14,6 +14,7 @@
 #import "FrogJmp.h"
 #import "TapeEquilibrium.h"
 #import "PermCheck.h"
+#import "MissingInteger.h"
 
 @implementation CodilitySolutions
 #pragma - mark Iterations Problems
@@ -61,5 +62,12 @@
     int isPermutation = [PermCheck solution:[NSMutableArray arrayWithArray:array]];
     NSLog(@"Is permutation?: %i", isPermutation);
 }
+
+//missing problems here...
++(void)testMissingIntegerSolution:(NSArray *)array {
+    int missingInteger = [MissingInteger solution:[NSMutableArray arrayWithArray:array]];
+    NSLog(@"Missing Integer: %i", missingInteger);
+}
+
 
 @end

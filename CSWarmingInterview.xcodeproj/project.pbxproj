@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C018C6072165C35900F4FE21 /* MissingInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = C018C6062165C35900F4FE21 /* MissingInteger.m */; };
 		C02DE4C92163D63B00002CB7 /* PermCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = C02DE4C82163D63B00002CB7 /* PermCheck.m */; };
 		C057E222215C126D006AA3E6 /* PermMissingElem.m in Sources */ = {isa = PBXBuildFile; fileRef = C057E221215C126D006AA3E6 /* PermMissingElem.m */; };
 		C057E225215C42F4006AA3E6 /* FrogJmp.m in Sources */ = {isa = PBXBuildFile; fileRef = C057E224215C42F4006AA3E6 /* FrogJmp.m */; };
@@ -32,6 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C018C6052165C35900F4FE21 /* MissingInteger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MissingInteger.h; sourceTree = "<group>"; };
+		C018C6062165C35900F4FE21 /* MissingInteger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MissingInteger.m; sourceTree = "<group>"; };
 		C02DE4C72163D63B00002CB7 /* PermCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PermCheck.h; sourceTree = "<group>"; };
 		C02DE4C82163D63B00002CB7 /* PermCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PermCheck.m; sourceTree = "<group>"; };
 		C057E220215C126D006AA3E6 /* PermMissingElem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PermMissingElem.h; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 			children = (
 				C02DE4C72163D63B00002CB7 /* PermCheck.h */,
 				C02DE4C82163D63B00002CB7 /* PermCheck.m */,
+				C018C6052165C35900F4FE21 /* MissingInteger.h */,
+				C018C6062165C35900F4FE21 /* MissingInteger.m */,
 			);
 			path = CountingElements;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				C057E222215C126D006AA3E6 /* PermMissingElem.m in Sources */,
 				C09F791021471111008AC5EA /* HackerRankSolutions.m in Sources */,
 				C09E20392148388100DBE15C /* OddOccurrencesInArray.m in Sources */,
+				C018C6072165C35900F4FE21 /* MissingInteger.m in Sources */,
 				C09F790021470CC2008AC5EA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

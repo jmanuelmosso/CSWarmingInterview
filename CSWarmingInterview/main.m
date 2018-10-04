@@ -19,7 +19,9 @@ int main(int argc, const char * argv[]) {
         [CodilitySolutions testPermMissingElementWithArray:@[@1, @3, @4, @5, @2]];
         [CodilitySolutions testFrogJumpsFor:3 y:999111321 d:7];
         [CodilitySolutions testTapeEquilibriumSolution:@[@3,@1,@2,@4,@3]];
-        [CodilitySolutions testPermCheckSolution:@[@3,@1,@2,@4,@3]];
+        [CodilitySolutions testPermCheckSolution:@[@3,@1,@2,@4,@5]];
+        //TODO: Add missing problems here
+        [CodilitySolutions testMissingIntegerSolution:@[@3,@1,@2,@4,@6]];
         #pragma - Hacker Rank Challenges
     }
     return 0;

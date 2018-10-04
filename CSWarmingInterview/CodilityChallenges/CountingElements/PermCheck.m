@@ -68,7 +68,7 @@ Time Complexity given by Codility:
 - The worst case time complexity is O(N) or O(N * log(N))
 */
 +(int)solution:(NSMutableArray*)array {
-    
+    //TODO: Add explanation  here
     int isPermutation = 1;
     int n = (int)[array count];
     if (n==0) {
@@ -76,13 +76,13 @@ Time Complexity given by Codility:
     }
     else {
         NSSet *elements = [NSSet setWithArray:array];
-        NSNumber *target = @1;
+        int  target = 1;
         for (int i=0; i<n;i++){
-            if (![elements containsObject:target]) {
+            if (![elements containsObject:@(target)]) {
                 isPermutation = 0;
-                break;
+                return isPermutation;
             }
-            target = @([target intValue] +1);
+            target++;
         }
     }
     return isPermutation;
