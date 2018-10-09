@@ -41,17 +41,39 @@ Time Complexity given by Codility:
 - The worst case time complexity is O(N) or O(N * log(N))
 */
 +(int)solution:(NSMutableArray*)array {
-    //TODO: Add explanation  here
+    
+    /******** Algorithm Explanation  ********/
+    // STEP 1
+    //       Check for edge cases - when the array is empty [], we should return 1
+    // STEP 2
+    //       Generate NSSet from the Array in oder to eliminate possible duplicates
+    // STEP 3
+	//		Implement a loop taking in consideration:
+    //       	N always starts from 1 and so on (1,2,3...n)
+	//			There is always one missing element in the array
+	//			So, in the Array we sould have N => (1,2,3...n+1)
+	//
+	// STEP 4
+	//		Look for the current element in the SET
+	//		If the element does't exist, that means we have found the smallest one missing element.
+	//		Break the loop.
+    
+    
+    // STEP 1
     int smallestCandidate = 0;
     int n = (int)[array count];
     if (n==0) {
         smallestCandidate = 1;
     }
     else {
+        // STEP 2
         NSSet *elements = [NSSet setWithArray:array];
+        
+        // STEP 3
         for (int i=1; i<=(n+1); i++) {
             BOOL exist = [elements containsObject:@(i)];
-            if(!exist){
+            if(!exist) {
+				// STEP 4
                 smallestCandidate = i;
                 return smallestCandidate;
             }

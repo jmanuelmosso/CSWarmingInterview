@@ -68,22 +68,44 @@ Time Complexity given by Codility:
 - The worst case time complexity is O(N) or O(N * log(N))
 */
 +(int)solution:(NSMutableArray*)array {
-    //TODO: Add explanation  here
+	
+	/******** Algorithm Explanation  ********/
+	// STEP 1
+	//       Check for edge cases - when the array is empty [], we should return 0
+	// STEP 2
+	//		Generate NSSet from the Array in oder to eliminate possible duplicates
+	//		NSSet also has better performance on search elements
+	// STEP 3
+	//		Implement a loop taking in consideration:
+	//			So, to be a permutation, in the Array we MUST have N => (1,2,3...n)
+	//			they don't need to be necessary ordered, but should conntain all the elemements from 1 to n
+	//
+	// STEP 4
+	//		Look for the current target in the SET
+	//		If the target does't exist, that means  is not a permutation
+	//		Break the loop.
+	
+	
+	// STEP 1
     int isPermutation = 1;
     int n = (int)[array count];
     if (n==0) {
         isPermutation=0;
     }
     else {
+		// STEP 2
         NSSet *elements = [NSSet setWithArray:array];
         int  target = 1;
-        for (int i=0; i<n;i++){
-            if (![elements containsObject:@(target)]) {
-                isPermutation = 0;
-                return isPermutation;
-            }
-            target++;
-        }
+		// STEP 3
+		while (target <= n) {
+			// STEP 4
+			if (![elements containsObject:@(target)]) {
+				isPermutation = 0;
+				return isPermutation;
+			}
+			target++;
+		}
+		
     }
     return isPermutation;
 }
