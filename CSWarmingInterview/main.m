@@ -13,6 +13,8 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         #pragma - Codility Challenges
+      
+        // Uncomment the problem you want to test.
         [CodilitySolutions testBinaryGapForNumber:9];
         [CodilitySolutions testCyclicRotationWithArray:@[@3, @8, @9, @7, @6] rotations:-2];
         [CodilitySolutions testOddOccurrencesWithArray:@[@7, @3, @5, @4, @5, @3, @4]];
@@ -20,7 +22,6 @@ int main(int argc, const char * argv[]) {
         [CodilitySolutions testFrogJumpsFor:3 y:999111321 d:7];
         [CodilitySolutions testTapeEquilibriumSolution:@[@3,@1,@2,@4,@3]];
         [CodilitySolutions testPermCheckSolution:@[@3,@1,@2,@4,@5]];
-        //TODO: Add missing problems here
         [CodilitySolutions testMissingIntegerSolution:@[@3,@1,@2,@4,@6]];
         #pragma - Hacker Rank Challenges
     }
